@@ -1,0 +1,24 @@
+def sum_of_the_number(arr,n):
+    sum=0
+    for i in range(n):
+        sum+=arr[i]
+    print("The sum of the numbers is:",sum)
+def find_even(arr,n):
+    print("The even numbers are")
+    for i in range(n):
+        if arr[i]%2==0:
+            print(arr[i])
+def find_large_number(arr,n):
+    max=arr[0]
+    for i in range(n):
+        if arr[i]>max:
+            max=arr[i]
+    print("The maximum number is:",max)
+n=int(input("Enter the size of your number:"))
+input("Enter the elements of the array:")
+arr=[]
+for i in range(n):
+    arr.append(int(input()))
+sum_of_the_number(arr,n)
+find_even(arr,n)
+find_large_number(arr,n)
